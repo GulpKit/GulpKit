@@ -1,6 +1,6 @@
 {
   "name": "gulpkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Abstraction for front-end dev automation",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/GulpKit/GulpKit/issues"
   },
-  "homepage": "https://github.com/GulpKit/GulpKit#readme"
+  "homepage": "https://github.com/GulpKit/GulpKit#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-batch": "^1.0.5",
+    "gulp-clip-empty-files": "^0.1.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "parse-filepath": "^0.6.3",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0",
+    "underscore": "^1.8.3"
+  }
 }

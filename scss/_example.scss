@@ -1,0 +1,130 @@
+.example .container {
+    position: relative;
+    padding-bottom: 5em;
+
+    p {
+        margin-bottom: 1em;
+    }
+    strong {
+        font-weight: normal;
+    }
+    ins, del {
+        text-decoration: none;
+    }
+
+    .window-header {
+        padding: 5px 0;
+        border-bottom: #6A6A6A 1px solid;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background-color: #F8F8F8;
+        background-image: linear-gradient(to bottom, #E8E8E8 0%, #BCBBBC 100%);
+        box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+        font: normal 0.8em 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
+        text-align: center;
+    }
+
+    .caret {
+        display: none;
+        line-height: 0;
+    }
+    .active {
+        .caret {
+            display: inline;
+        }
+    }
+    .active.waiting .caret {
+        animation: blinker 0.9s linear infinite;
+    }
+}
+.editor {
+    position: relative;
+    z-index: 0;
+
+    &.active {
+        z-index: 1;
+    }
+
+    .code {
+        min-height: 300px;
+        padding: 20px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        background: #2D2D2D;
+        font: 0.9em Consolas, Courier New;
+        line-height: 1.3em;
+        color: #F0F0EA;
+
+        .tab {
+            display: inline-block;
+            width: 2em;
+        }
+
+        .purple {
+            color: #AE81FF;
+        }
+        .green {
+            color: #A6E22E;
+        }
+        .blue {
+            color: #64D4E9;
+        }
+        .orange {
+            color: #FD971F;
+        }
+        .grey {
+            color: #AAA;
+        }
+    }
+}
+
+.terminal {
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    right: 50px;
+    left: 100px;
+    margin: 0 30px;
+
+    &.active {
+        z-index: 1;
+    }
+
+    @media(min-width: 860px) {
+        top: 200px;
+        right: -70px;
+        left: auto;
+        width: 586px;
+        margin: 0;
+    }
+
+    .term {
+        min-height: 120px;
+        padding: 5px;
+        background: rgba(0, 0, 0, 0.85);
+        font: 0.8em 'Monaco', 'Consolas', 'Courier New', monospace;
+        color: #FFF;
+    }
+
+    .purple {
+        color: #D241A6;
+    }
+    .blue {
+        color: #3ABBC6;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

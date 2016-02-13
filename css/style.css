@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:300);
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', serif;
+  font-weight: 700; }
+
+code {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  background: #F5F5F5;
+  text-align: center;
+  color: #777; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 860px) {
+    .container {
+      padding: 0; } }
+
+.header {
+  padding: 50px 0;
+  text-align: center; }
+  .header h1 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 3em; }
+  .header img {
+    width: 128px;
+    height: 128px; }
+  .header code {
+    margin-top: 2em; }
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .github a:before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #181616 transparent transparent;
+    content: ''; }
+  .github img {
+    position: relative;
+    top: 9px;
+    left: -9px;
+    z-index: 1;
+    width: 40px;
+    height: 40px; }
+
+.example .container {
+  position: relative;
+  padding-bottom: 5em; }
+  .example .container p {
+    margin-bottom: 1em; }
+  .example .container strong {
+    font-weight: normal; }
+  .example .container ins, .example .container del {
+    text-decoration: none; }
+  .example .container .window-header {
+    padding: 5px 0;
+    border-bottom: #6A6A6A 1px solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #F8F8F8;
+    background-image: linear-gradient(to bottom, #E8E8E8 0%, #BCBBBC 100%);
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+    font: normal 0.8em 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
+    text-align: center; }
+  .example .container .caret {
+    display: none;
+    line-height: 0; }
+  .example .container .active .caret {
+    display: inline; }
+  .example .container .active.waiting .caret {
+    animation: blinker 0.9s linear infinite; }
+
+.editor {
+  position: relative;
+  z-index: 0; }
+  .editor.active {
+    z-index: 1; }
+  .editor .code {
+    min-height: 300px;
+    padding: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #2D2D2D;
+    font: 0.9em Consolas, Courier New;
+    line-height: 1.3em;
+    color: #F0F0EA; }
+    .editor .code .tab {
+      display: inline-block;
+      width: 2em; }
+    .editor .code .purple {
+      color: #AE81FF; }
+    .editor .code .green {
+      color: #A6E22E; }
+    .editor .code .blue {
+      color: #64D4E9; }
+    .editor .code .orange {
+      color: #FD971F; }
+    .editor .code .grey {
+      color: #AAA; }
+
+.terminal {
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  right: 50px;
+  left: 100px;
+  margin: 0 30px; }
+  .terminal.active {
+    z-index: 1; }
+  @media (min-width: 860px) {
+    .terminal {
+      top: 200px;
+      right: -70px;
+      left: auto;
+      width: 586px;
+      margin: 0; } }
+  .terminal .term {
+    min-height: 120px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.85);
+    font: 0.8em 'Monaco', 'Consolas', 'Courier New', monospace;
+    color: #FFF; }
+  .terminal .purple {
+    color: #D241A6; }
+  .terminal .blue {
+    color: #3ABBC6; }
+
+@keyframes blinker {
+  0% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }

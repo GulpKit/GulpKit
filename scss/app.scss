@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:300);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', serif;
+    font-weight: 700;
+}
+
+code {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    background: #F5F5F5;
+    text-align: center;
+    color: #777;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media(min-width: 860px) {
+        padding: 0;
+    }
+}
+
+.header {
+    padding: 50px 0;
+    text-align: center;
+
+    h1 {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        font-size: 3em;
+    }
+    img {
+        width: 128px;
+        height: 128px;
+    }
+    code {
+        margin-top: 2em;
+    }
+}
+
+.github {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a:before {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100px 100px 0;
+        border-color: transparent #181616 transparent transparent;
+        content: '';
+    }
+
+    img {
+        position: relative;
+        top: 9px;
+        left: -9px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@import "example";

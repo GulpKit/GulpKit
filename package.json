@@ -1,0 +1,23 @@
+{
+  "name": "gulpkit",
+  "version": "0.0.1",
+  "description": "Abstraction for front-end dev automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GulpKit/GulpKit.git"
+  },
+  "keywords": [
+    "gulpkit",
+    "gulp"
+  ],
+  "author": "Dan Bovey <dan@danbovey.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GulpKit/GulpKit/issues"
+  },
+  "homepage": "https://github.com/GulpKit/GulpKit#readme"
+}

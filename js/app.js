@@ -145,7 +145,7 @@ $(function() {
             var self = this;
 
             var options = {
-                speed: 0, // 50
+                speed: 50,
                 delay: 0.8,
                 speed_vary: true,
                 caret: '<span class="caret">▏</span>',

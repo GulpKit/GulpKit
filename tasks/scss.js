@@ -3,7 +3,7 @@
 // compiles scss to css, autoprefixer, combines media queries and minifies on production
 // =============================================
 
-var GulpKit = require('GulpKit');
+var GulpKit = require('../index');
 var gulp = require('gulp');
 var util = require('gulp-util');
 var clipEmptyFiles = require('gulp-clip-empty-files');
@@ -29,7 +29,7 @@ var scssTask = function(options) {
             .pipe(util.env.production || options.combineMediaQueries === true ? combineMq() : util.noop())
             .pipe(util.env.production || options.minify === true ? cssNano() : util.noop())
             .pipe(concat(paths.output.name))
-            .pipe(gulp.dest(paths.output.baseDir)) // TODO - Rename/Concat
+            .pipe(gulp.dest(paths.output.baseDir))
             .pipe(options.browserSync === true ? browserSync.reload({ stream: true }) : util.noop());
     })
     .watch(paths.source.baseDir + '/**/*.+(sass|scss)')

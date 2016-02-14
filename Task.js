@@ -10,7 +10,7 @@ var Task = function(name, stream) {
 };
 
 Task.prototype.run = function() {
-	this.stream();
+	return this.stream();
 };
 
 Task.prototype.register = function() {

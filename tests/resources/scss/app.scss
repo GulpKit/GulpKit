@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #EF4D4D 0%, #CC4242 100%);
+}
+
+button {
+    border-radius: 4px;
+    box-shadow: 3px 3px 23px -5px rgba(0,0,0,0.75);
+    transform: skew(-10deg, 0deg) ;
+}
+
+.container {
+    max-width: calc(100% - 20px);
+
+    @media(min-width: 1200px) {
+        max-width: 1160px;
+    }
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}

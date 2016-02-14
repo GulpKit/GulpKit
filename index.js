@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var util = require('gulp-util');
 var _ = require('underscore');
 
 var GulpKit = function(methods) {
@@ -10,9 +11,14 @@ var GulpKit = function(methods) {
         if(_.contains(gulp.methods, name)) return;
 
         gulp.task(name, function() {
-            GulpKit.tasks.forEach(function(task) {
-                task.run();
-            });
+            if(_.intersection(util.env._, [name, 'watch']).length) {
+                return _.where(GulpKit.tasks, { name: name })
+                    .forEach(function(task) {
+                        return task.run();
+                    });
+            }
+
+            return _.where(GulpKit.tasks, { name: name })[0].run();
         });
     }
 };

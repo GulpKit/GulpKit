@@ -40,9 +40,9 @@ Paths.prototype.output = function(output, defaultName) {
 
     // If the user didn't provide a file name, use the tasks default name
     if(!this.output.name && defaultName) {
-        // If the path is not an array, we can use that and change the extension 
-        if(!Array.isArray(this.src.path) && this.src.name.indexOf('*') == -1) {
-            defaultName = util.replaceExtension(this.src.name, this.parse(defaultName).extension);
+        // If the path is not an array, we can use that and change the extension
+        if(!Array.isArray(this.source.path) && this.source.name.indexOf('*') == -1) {
+            defaultName = util.replaceExtension(this.source.name, this.parse(defaultName).extension);
         }
 
         this.output = this.parse(p.join(output, defaultName));

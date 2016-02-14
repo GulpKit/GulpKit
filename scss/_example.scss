@@ -1,9 +1,9 @@
 .example .container {
     position: relative;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
 
     p {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     strong {
         font-weight: normal;
@@ -20,7 +20,7 @@
         background-color: #F8F8F8;
         background-image: linear-gradient(to bottom, #E8E8E8 0%, #BCBBBC 100%);
         box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-        font: normal 0.8em 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
+        font: normal 0.8rem 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
         text-align: center;
     }
 
@@ -51,7 +51,7 @@
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
         background: #2D2D2D;
-        font: 0.9em Consolas, Courier New;
+        font: 0.9rem Consolas, Courier New;
         line-height: 1.3em;
         color: #F0F0EA;
 
@@ -102,7 +102,7 @@
         min-height: 120px;
         padding: 5px;
         background: rgba(0, 0, 0, 0.85);
-        font: 0.8em 'Monaco', 'Consolas', 'Courier New', monospace;
+        font: 0.8rem 'Monaco', 'Consolas', 'Courier New', monospace;
         color: #FFF;
     }
 

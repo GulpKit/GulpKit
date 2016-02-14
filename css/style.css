@@ -1,16 +1,224 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:300);
+@font-face {
+  font-family: 'entypo';
+  src: url("../font/entypo.eot?32364489");
+  src: url("../font/entypo.eot?32364489#iefix") format("embedded-opentype"), url("../font/entypo.woff?32364489") format("woff"), url("../font/entypo.ttf?32364489") format("truetype"), url("../font/entypo.svg?32364489#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'entypo';
+    src: url('../font/entypo.svg?32364489#entypo') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "entypo";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-search:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-layout:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-check:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-cancel:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-home:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-lock:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-lock-open:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-eye:before {
+  content: '\e808'; }
+
+/* '' */
+.icon-info-circled:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-plus:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-code:before {
+  content: '\e80b'; }
+
+/* '' */
+.icon-pencil:before {
+  content: '\e80c'; }
+
+/* '' */
+.icon-keyboard:before {
+  content: '\e80d'; }
+
+/* '' */
+.icon-trash:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-bell:before {
+  content: '\e80f'; }
+
+/* '' */
+.icon-folder:before {
+  content: '\e810'; }
+
+/* '' */
+.icon-archive:before {
+  content: '\e811'; }
+
+/* '' */
+.icon-box:before {
+  content: '\e812'; }
+
+/* '' */
+.icon-tools:before {
+  content: '\e813'; }
+
+/* '' */
+.icon-cog:before {
+  content: '\e814'; }
+
+/* '' */
+.icon-popup:before {
+  content: '\e815'; }
+
+/* '' */
+.icon-publish:before {
+  content: '\e816'; }
+
+/* '' */
+.icon-window:before {
+  content: '\e817'; }
+
+/* '' */
+.icon-resize-full:before {
+  content: '\e818'; }
+
+/* '' */
+.icon-resize-small:before {
+  content: '\e819'; }
+
+/* '' */
+.icon-down-open:before {
+  content: '\e81a'; }
+
+/* '' */
+.icon-left-open:before {
+  content: '\e81b'; }
+
+/* '' */
+.icon-right-open:before {
+  content: '\e81c'; }
+
+/* '' */
+.icon-up-open:before {
+  content: '\e81d'; }
+
+/* '' */
+.icon-stop:before {
+  content: '\e81e'; }
+
+/* '' */
+.icon-play:before {
+  content: '\e81f'; }
+
+/* '' */
+.icon-dot-3:before {
+  content: '\e820'; }
+
+/* '' */
+.icon-chart-area:before {
+  content: '\e821'; }
+
+/* '' */
+.icon-flow-branch:before {
+  content: '\e822'; }
+
+/* '' */
+.icon-github-circled:before {
+  content: '\e823'; }
+
+/* '' */
+.icon-gauge:before {
+  content: '\e824'; }
+
+/* '' */
+.icon-link:before {
+  content: '\e825'; }
+
+/* '' */
+.icon-export:before {
+  content: '\e826'; }
+
+/* '' */
+.icon-cw:before {
+  content: '\e827'; }
+
+/* '' */
+.icon-github:before {
+  content: '\e828'; }
+
+/* '' */
+.icon-trello:before {
+  content: '\e829'; }
+
+/* '' */
 * {
   margin: 0;
   padding: 0; }
 
 body {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dancing Script', serif;
-  font-weight: 700; }
+  font: 300 1.1em 'Lato', sans-serif; }
 
 code {
   display: inline-block;
@@ -21,6 +229,10 @@ code {
   text-align: center;
   color: #777; }
 
+a {
+  text-decoration: none;
+  color: #EF4D4D; }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -29,18 +241,46 @@ code {
     .container {
       padding: 0; } }
 
+.content h1, .content h2, .content h3, .content h4 h4, .content h5, .content p {
+  margin-bottom: 1em; }
+
+.content pre code {
+  display: block;
+  text-align: left; }
+
+.content ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 20px; }
+
+.content p.lead {
+  font-size: 1.2em; }
+
+.content .container {
+  padding-bottom: 4em; }
+
 .header {
   padding: 50px 0;
   text-align: center; }
   .header h1 {
     margin-top: 0.2em;
     margin-bottom: 0.2em;
-    font-size: 3em; }
+    font: 700 3rem 'Dancing Script', serif; }
   .header img {
     width: 128px;
     height: 128px; }
   .header code {
     margin-top: 2em; }
+
+.footer {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #777; }
+  .footer .love {
+    color: #F15F5F; }
+
+.coming-soon .container {
+  padding-bottom: 2em; }
 
 .github {
   position: absolute;
@@ -58,19 +298,19 @@ code {
     border-width: 0 100px 100px 0;
     border-color: transparent #181616 transparent transparent;
     content: ''; }
-  .github img {
+  .github .icon-github-circled {
     position: relative;
     top: 9px;
     left: -9px;
     z-index: 1;
-    width: 40px;
-    height: 40px; }
+    font-size: 2em;
+    color: #FFF; }
 
 .example .container {
   position: relative;
-  padding-bottom: 5em; }
+  padding-bottom: 4em; }
   .example .container p {
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
   .example .container strong {
     font-weight: normal; }
   .example .container ins, .example .container del {
@@ -83,7 +323,7 @@ code {
     background-color: #F8F8F8;
     background-image: linear-gradient(to bottom, #E8E8E8 0%, #BCBBBC 100%);
     box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-    font: normal 0.8em 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
+    font: normal 0.8rem 'San Francisco', 'San Francisco Display', 'Lucida Grande', sans-serif;
     text-align: center; }
   .example .container .caret {
     display: none;
@@ -104,7 +344,7 @@ code {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     background: #2D2D2D;
-    font: 0.9em Consolas, Courier New;
+    font: 0.9rem Consolas, Courier New;
     line-height: 1.3em;
     color: #F0F0EA; }
     .editor .code .tab {
@@ -141,7 +381,7 @@ code {
     min-height: 120px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.85);
-    font: 0.8em 'Monaco', 'Consolas', 'Courier New', monospace;
+    font: 0.8rem 'Monaco', 'Consolas', 'Courier New', monospace;
     color: #FFF; }
   .terminal .purple {
     color: #D241A6; }

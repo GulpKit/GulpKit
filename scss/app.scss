@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:300);
 
+@import "entypo";
+
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +9,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dancing Script', serif;
-    font-weight: 700;
+    font: 300 1.1em 'Lato', sans-serif;
 }
 
 code {
@@ -26,6 +22,11 @@ code {
     color: #777;
 }
 
+a {
+    text-decoration: none;
+    color: #EF4D4D;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -36,6 +37,28 @@ code {
     }
 }
 
+.content {
+    h1, h2, h3, h4 h4, h5, p {
+        margin-bottom: 1em;
+    }
+    pre code {
+        display: block;
+        text-align: left;
+    }
+     ul {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 20px;
+    }
+    p.lead {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding-bottom: 4em;
+    }
+}
+
 .header {
     padding: 50px 0;
     text-align: center;
@@ -43,7 +66,7 @@ code {
     h1 {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
-        font-size: 3em;
+        font: 700 3rem 'Dancing Script', serif;
     }
     img {
         width: 128px;
@@ -52,6 +75,20 @@ code {
     code {
         margin-top: 2em;
     }
+}
+
+.footer {
+    margin-bottom: 2em;
+    text-align: center;
+    color: #777;
+
+    .love {
+        color: #F15F5F;
+    }
+}
+
+.coming-soon .container {
+    padding-bottom: 2em;
 }
 
 .github {
@@ -73,13 +110,13 @@ code {
         content: '';
     }
 
-    img {
+    .icon-github-circled {
         position: relative;
         top: 9px;
         left: -9px;
         z-index: 1;
-        width: 40px;
-        height: 40px;
+        font-size: 2em;
+        color: #FFF;
     }
 }
 

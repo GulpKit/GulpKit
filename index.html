@@ -28,7 +28,7 @@
         </header>
         <section class="example">
             <div class="container">
-                <p>With GulpKit, you can write a fully custom gulpfile in under a minute...</p>
+                <p>GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp packages. In a matter of minutes, you can get setup with a highly configurable gulpfile that compiles your front-end site(s) and watches for changes.</p>
                 <div class="editor">
                     <h1 class="window-header">gulpfile.js &mdash; Sublime Text</h1>
                     <div class="code waiting"></div>
@@ -39,9 +39,40 @@
                 </div>
             </div>
         </section>
+        <section class="tasks content">
+            <div class="container">
+                <h1>Tasks</h1>
+                <p>Currently only a prototype sass compiler task exists.</p>
+                <h2>scss</h2>
+                <p>Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS.</p>
+                <pre><code>kit.scss({
+    source: './scss/**/*',
+    output: './css'
+});</code></pre>
+            </div>
+        </section>
+        <section class="coming-soon content">
+            <div class="container">
+                <h1>Coming Soon / To-Do</h1>
+                <ul>
+                    <li>Testing library</li>
+                    <li>JS task</li>
+                </ul>
+            </div>
+        </section>
+        <section class="trello content">
+            <div class="container">
+                <p class="lead"><a href="https://trello.com/b/UbN0BlXh/gulpkit"><span class="icon-trello"></span> Vote and add suggestions on our public Trello board</a></p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>Made with <span class="love">&hearts;</span> and <span class="icon-code"></span> in England</p>
+            </div>
+        </footer>
         <div class="github">
             <a href="https://github.com/GulpKit/GulpKit">
-                <img src="img/github.svg" alt="GitHub">
+                <span class="icon-github-circled"></span>
             </a>
         </div>
 
@@ -50,7 +81,7 @@
 
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+            ga('create','UA-73774405-1','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>

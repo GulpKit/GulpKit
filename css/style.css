@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Lato:300);
 @font-face {
   font-family: 'entypo';
-  src: url("../font/entypo.eot?32364489");
-  src: url("../font/entypo.eot?32364489#iefix") format("embedded-opentype"), url("../font/entypo.woff?32364489") format("woff"), url("../font/entypo.ttf?32364489") format("truetype"), url("../font/entypo.svg?32364489#entypo") format("svg");
+  src: url("../font/entypo.eot?83206899");
+  src: url("../font/entypo.eot?83206899#iefix") format("embedded-opentype"), url("../font/entypo.woff?83206899") format("woff"), url("../font/entypo.ttf?83206899") format("truetype"), url("../font/entypo.svg?83206899#entypo") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -13,7 +13,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'entypo';
-    src: url('../font/entypo.svg?32364489#entypo') format('svg');
+    src: url('../font/entypo.svg?83206899#entypo') format('svg');
   }
 }
 */
@@ -212,13 +212,18 @@
   content: '\e829'; }
 
 /* '' */
+.icon-twitter:before {
+  content: '\e82a'; }
+
+/* '' */
 * {
   margin: 0;
   padding: 0; }
 
 body {
   overflow-x: hidden;
-  font: 300 1.1em 'Lato', sans-serif; }
+  font: 300 1.1em 'Lato', sans-serif;
+  background: #FFF; }
 
 code {
   display: inline-block;
@@ -253,9 +258,6 @@ a {
   margin-bottom: 1em;
   padding-left: 20px; }
 
-.content p.lead {
-  font-size: 1.2em; }
-
 .content .container {
   padding-bottom: 4em; }
 
@@ -263,9 +265,22 @@ a {
   padding: 50px 0;
   text-align: center; }
   .header h1 {
+    display: inline-block;
+    position: relative;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     font: 700 3rem 'Dancing Script', serif; }
+    .header h1 .version {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      padding: 3px 6px;
+      vertical-align: top;
+      border-radius: 3px;
+      background: #F5F5F5;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.2em;
+      color: #AAA; }
   .header img {
     width: 128px;
     height: 128px; }
@@ -281,6 +296,9 @@ a {
 
 .coming-soon .container {
   padding-bottom: 2em; }
+
+.social .twitter a {
+  color: #4099FF; }
 
 .github {
   position: absolute;
@@ -364,16 +382,16 @@ a {
 .terminal {
   position: absolute;
   z-index: 0;
-  top: 100px;
+  bottom: 200px;
   right: 50px;
-  left: 100px;
+  left: 50px;
   margin: 0 30px; }
   .terminal.active {
     z-index: 1; }
   @media (min-width: 860px) {
     .terminal {
-      top: 200px;
-      right: -70px;
+      bottom: 130px;
+      right: -200px;
       left: auto;
       width: 586px;
       margin: 0; } }
@@ -387,6 +405,12 @@ a {
     color: #D241A6; }
   .terminal .blue {
     color: #3ABBC6; }
+  .terminal .red {
+    color: #C13926; }
+  .terminal iframe {
+    width: 100%;
+    height: 250px;
+    overflow: hidden; }
 
 @keyframes blinker {
   0% {

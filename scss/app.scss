@@ -10,6 +10,7 @@
 body {
     overflow-x: hidden;
     font: 300 1.1em 'Lato', sans-serif;
+    background: #FFF;
 }
 
 code {
@@ -50,9 +51,6 @@ a {
         margin-bottom: 1em;
         padding-left: 20px;
     }
-    p.lead {
-        font-size: 1.2em;
-    }
 
     .container {
         padding-bottom: 4em;
@@ -64,9 +62,24 @@ a {
     text-align: center;
 
     h1 {
+        display: inline-block;
+        position: relative;
         margin-top: 0.2em;
         margin-bottom: 0.2em;
         font: 700 3rem 'Dancing Script', serif;
+
+        .version {
+            position: absolute;
+            top: 0;
+            right: -50px;
+            padding: 3px 6px;
+            vertical-align: top;
+            border-radius: 3px;
+            background: #F5F5F5;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.2em;
+            color: #AAA;
+        }
     }
     img {
         width: 128px;
@@ -89,6 +102,12 @@ a {
 
 .coming-soon .container {
     padding-bottom: 2em;
+}
+
+.social {
+    .twitter a {
+        color: #4099FF;
+    }
 }
 
 .github {

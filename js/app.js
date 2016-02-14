@@ -236,7 +236,9 @@ $(function() {
                     } else if(cmd == 'gulpkit') {
                         terminal.gulpkit();
                     } else if(cmd == 'gulp') {
-                        if(text == 'gulp' || others == 'default') {
+                        if(text == 'gulp') {
+                            terminal.gulp.default('');
+                        } else if(others == 'default') {
                             terminal.gulp.default('default');
                         } else if(others == 'scss') {
                             terminal.gulp.scss();

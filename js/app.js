@@ -75,6 +75,12 @@ $(function() {
                 "GulpKit v0.0.1 ALPHA</strong></ins>"
             );
         },
+        kettle: function() {
+            terminal.type(
+                "<ins><strong>$ kettle<br>" +
+                "<0a href='https://github.com/JakeCobley/Kettle' class='blue'>Error 418. I'm a teapot.<0/a></strong></ins>"
+            );
+        },
         install: function() {
             terminal.type(
                 "<ins><strong>$ </strong></ins>npm i gulpkit<br>" +
@@ -249,6 +255,8 @@ $(function() {
                         } else {
                             terminal.gulp.unknown(others);
                         }
+                    } else if(cmd == 'kettle') {
+                        terminal.kettle();
                     } else if((cmd == 'rm' && others == '-rf') || (cmd == 'rm' && others == '-r')) {
                         $('body').empty();
                     } else {

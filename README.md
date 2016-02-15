@@ -4,6 +4,10 @@ Abstraction for front-end automation.
 
 GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp packages. In a matter of minutes, you can get setup with a highly configurable gulpfile that compiles your front-end site(s) and watches for changes.
 
+[![npm](https://img.shields.io/npm/dt/gulpkit.svg)](https://www.npmjs.com/package/gulpkit)
+[![npm](https://img.shields.io/npm/v/gulpkit.svg)](https://www.npmjs.com/package/gulpkit)
+[![npm](https://img.shields.io/npm/l/gulpkit.svg)](https://raw.githubusercontent.com/GulpKit/GulpKit/master/LICENSE)
+
 ## Install
 
     npm i gulpkit

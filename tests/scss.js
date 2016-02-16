@@ -5,17 +5,26 @@ var fs = require('fs');
 var del = require('del');
 
 describe('SCSS Task', function() {
-    this.timeout(10000);
-
     var fileShouldExist = function(file) {
         return assert.equal(fs.existsSync(file), true);
     }
 
-    afterEach(function(done) {
+    var runGulp = function(assertions) {
+        for(var i in GulpKit.tasks) {
+            GulpKit.tasks[i].stream(function() {
+                assertions();
+            });
+        }
+    };
+
+    var reset = function(done) {
         del.sync('./build');
 
         done();
-    });
+    };
+
+    afterEach(reset);
+    after(reset);
 
     it('should compile a sass file to css', function(done) {
         /**
@@ -28,17 +37,10 @@ describe('SCSS Task', function() {
             });
         });
 
-        GulpKit.gulp.start('scss', function() {
-            /**
-             * Gulp doesn't look at the result of the task, so until we have
-             * a callback/promise library on `GulpKit.Task` this is what we're
-             * left with.
-             **/
-            setTimeout(function() {
-                fileShouldExist('./tests/build/css/app.css');
+        runGulp(function() {
+            fileShouldExist('./tests/build/css/app.css');
 
-                done();
-            }, 200);
+            done();
         });
     });
 });

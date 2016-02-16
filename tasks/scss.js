@@ -13,14 +13,15 @@ var autoPrefixer = require('gulp-autoprefixer');
 var combineMq = require('gulp-combine-mq');
 var cssNano = require('gulp-cssnano');
 var concat = require('gulp-concat');
+var gulpFn = require('gulp-fn');
 
 var scssTask = function(options) {
     var paths = gulpPaths(options.source, options.output);
 
-    return new GulpKit.Task('scss', function() {
+    return new GulpKit.Task('scss', function(callback) {
         // TODO - Deep extend defaults + options
 
-        return gulp.src(paths.source.path)
+        var stream = gulp.src(paths.source.path)
             .pipe(clipEmptyFiles())
             .pipe(!util.env.production || options.sourcemaps === true ? sourcemaps.init() : util.noop())
             .pipe(sass()) // TODO - .on('error'...
@@ -30,7 +31,16 @@ var scssTask = function(options) {
             .pipe(util.env.production || options.minify === true ? cssNano() : util.noop())
             .pipe(concat(paths.output.name))
             .pipe(gulp.dest(paths.output.baseDir))
-            .pipe(options.browserSync === true ? browserSync.reload({ stream: true }) : util.noop());
+            .pipe(options.browserSync === true ? browserSync.reload({ stream: true }) : util.noop())
+            .pipe(gulpFn(done));
+
+        function done() {
+            if(typeof callback == 'function') {
+                callback();
+            }
+        }
+
+        return stream;
     })
     .watch(paths.source.baseDir + '/**/*.+(sass|scss)')
     .ignore(paths.output.path);

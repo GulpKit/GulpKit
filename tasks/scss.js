@@ -1,7 +1,7 @@
-// =============================================
-// SCSS Compiler - `gulp scss`
-// compiles scss to css, autoprefixer, combines media queries and minifies on production
-// =============================================
+/**
+ * SCSS Compiler - `gulp scss`
+ * Compiles scss to css, autoprefixer, combines media queries and minifies on production
+ **/
 
 var GulpKit = require('../index');
 var gulp = require('gulp');
@@ -22,10 +22,10 @@ var scssTask = function(options) {
 
         return gulp.src(paths.source.path)
             .pipe(clipEmptyFiles())
-            .pipe(util.env.development || options.sourcemaps === true ? sourcemaps.init() : util.noop())
+            .pipe(!util.env.production || options.sourcemaps === true ? sourcemaps.init() : util.noop())
             .pipe(sass()) // TODO - .on('error'...
             .pipe(options.autoprefixer === true ? autoPrefixer(options.autoPrefixer) : util.noop())
-            .pipe(util.env.development || options.sourcemaps === true ? sourcemaps.write() : util.noop())
+            .pipe(!util.env.production || options.sourcemaps === true ? sourcemaps.write() : util.noop())
             .pipe(util.env.production || options.combineMediaQueries === true ? combineMq() : util.noop())
             .pipe(util.env.production || options.minify === true ? cssNano() : util.noop())
             .pipe(concat(paths.output.name))

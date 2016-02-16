@@ -11,14 +11,10 @@ var GulpKit = function(methods) {
         if(_.contains(gulp.methods, name)) return;
 
         gulp.task(name, function() {
-            if(_.intersection(util.env._, [name, 'watch']).length) {
-                return _.where(GulpKit.tasks, { name: name })
-                    .forEach(function(task) {
-                        return task.run();
-                    });
-            }
-
-            return _.where(GulpKit.tasks, { name: name })[0].run();
+            return _.where(GulpKit.tasks, { name: name })
+                .forEach(function(task) {
+                    task.run();
+                });
         });
     }
 };

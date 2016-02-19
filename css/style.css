@@ -225,6 +225,15 @@ body {
   font: 300 1.1em 'Lato', sans-serif;
   background: #FFF; }
 
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1em; }
+
 code {
   display: inline-block;
   padding: 4px 8px;
@@ -252,6 +261,9 @@ a {
 .content pre code {
   display: block;
   text-align: left; }
+
+.content pre + h1, .content pre + h2 {
+  margin-top: 1em; }
 
 .content ul {
   margin-top: 1em;
@@ -286,6 +298,15 @@ a {
     height: 128px; }
   .header code {
     margin-top: 2em; }
+  .header nav {
+    margin-top: 2em; }
+    .header nav a:after {
+      margin: 0 1em;
+      color: #777;
+      content: '|'; }
+    .header nav a:last-child:after {
+      margin: 0;
+      content: ''; }
 
 .footer {
   margin-bottom: 2em;
@@ -296,6 +317,11 @@ a {
 
 .coming-soon .container {
   padding-bottom: 2em; }
+
+.tasks h2 {
+  margin-top: 1em; }
+  .tasks h2:first-of-type {
+    margin-top: 0; }
 
 .social .twitter a {
   color: #4099FF; }

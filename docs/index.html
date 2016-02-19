@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>GulpKit</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <link rel="icon" href="../favicon.ico">
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="../favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="header">
+            <div class="container">
+                <a href="../"><img src="../img/logo.svg" alt="GulpKit"></a>
+                <div class="logo">
+                    <h1>GulpKit<span class="version">ALPHA</span></h1>
+                </div>
+            </div>
+        </header>
+        <section class="docs content">
+            <div class="container">
+                <h1>Docs</h1>
+                <p>Advanced usage of GulpKit is easy with the use of <code>GulpKit.extend</code>.</p>
+                <pre><code>GulpKit.extend('customSass', function(options) {
+    return new Task('customSass', options, function() {
+        return gulp.src(options.source.path)
+            .pipe(sass())
+            .pipe(gulp.dest(options.output.baseDir));
+    });
+});
+
+GulpKit(function(kit) {
+    kit.customSass({
+        source: './scss/style.scss',
+        output: './css'
+    });
+});</code></pre>
+                <h2>Options</h2>
+                <p>You can support options in your custom task and conditionally add pipes to the stream.</p>
+                <pre><code>GulpKit.extend('customOptions', function(options) {
+    var defaults = {
+        foo: true,
+        bar: false
+    };
+    // Overwrite options into default settings, specify the extension like 'css'
+    options = GulpKit.Options.extend(defaults, options, extension);
+
+    return new Task('customOptions', options, function() {
+        return gulp.src(options.source.path)
+            .pipe(options.foo ? ... : util.noop())
+            .pipe(gulp.dest(options.output.path));
+    });
+});
+
+GulpKit(function(kit) {
+    kit.customOptions({
+        source: '...'
+        output: '...'
+        bar: true
+    });
+});</code></pre>
+                <h2>Testing</h2>
+                <p>We use <a href="http://mochajs.org">Mocha</a> for JS testing. Testing the gulp tasks requires that the gulp stream returns a callback so that we know when it's done (<a href="https://github.com/gulpjs/gulp/issues/355">support for this should be coming in Gulp 4</a>).</p>
+                <pre><code>new Task('customTested', options, function(callback) {
+    return gulp.src(...)
+        .pipe(...)
+        .pipe(gulpFn(done));
+
+    function done() {
+        if(typeof callback == 'function') {
+            callback();
+        }
+    }
+});</code></pre>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>Made with <span class="love">&hearts;</span> and <span class="icon-code"></span> in England</p>
+            </div>
+        </footer>
+        <div class="github">
+            <a href="https://github.com/GulpKit/GulpKit">
+                <span class="icon-github-circled"></span>
+            </a>
+        </div>
+
+        <script src="js/t.js"></script>
+        <script src="js/app.js"></script>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-73774405-1','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

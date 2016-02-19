@@ -26,12 +26,17 @@
 
         <header class="header">
             <div class="container">
-                <img src="img/logo.svg" alt="GulpKit">
+                <a href=""><img src="img/logo.svg" alt="GulpKit"></a>
                 <div class="logo">
                     <h1>GulpKit<span class="version">ALPHA</span></h1>
                 </div>
                 <p>Abstraction for front-end dev automation</p>
                 <code>npm i gulpkit</code>
+                <nav>
+                    <a href="docs">Docs</a>
+                    <a href="https://github.com/GulpKit/GulpKit">GitHub</a>
+                    <a href="https://www.npmjs.com/package/gulpkit">npm</a>
+                </nav>
             </div>
         </header>
         <section class="example">
@@ -50,12 +55,17 @@
         <section class="tasks content">
             <div class="container">
                 <h1>Tasks</h1>
-                <p>Currently only a prototype sass compiler task exists.</p>
                 <h2>scss</h2>
                 <p>Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS.</p>
                 <pre><code>kit.scss({
     source: './scss/**/*',
     output: './css'
+});</code></pre>
+                <h2>browserSync</h2>
+                <p>Browsersync makes developing and testing faster by synchronising code changes and interactions like clicks, scrolls and form inputs across multiple devices.</p>
+                <p>All output from tasks are added to the list of files that Browsersync will watch and refresh connected browsers on changes.</p>
+                <pre><code>kit.browserSync({
+    proxy: 'yourapp.local'
 });</code></pre>
             </div>
         </section>
@@ -64,7 +74,6 @@
                 <h1>Coming Soon / To-Do</h1>
                 <ul>
                     <li>JS task</li>
-                    <li>BrowserSync task</li>
                 </ul>
             </div>
         </section>

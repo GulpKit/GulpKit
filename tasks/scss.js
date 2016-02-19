@@ -14,14 +14,24 @@ var combineMq = require('gulp-combine-mq');
 var cssNano = require('gulp-cssnano');
 var concat = require('gulp-concat');
 var gulpFn = require('gulp-fn');
+var browserSync = require('browser-sync');
 
 var scssTask = function(options) {
-    var paths = gulpPaths(options.source, options.output);
+    var defaults = {
+        source: 'scss/app.scss',
+        output: 'css/style.css',
+        sourcemaps: !util.env.production,
+        autoprefixer: true,
+        combineMediaQueries: true,
+        browserSync: {
+            stream: true
+        }
+    };
+    options = GulpKit.Options.extend(options, defaults, 'css');
 
-    return new GulpKit.Task('scss', function(callback) {
-        // TODO - Deep extend defaults + options
+    return new GulpKit.Task('scss', options, function(callback) {
 
-        var stream = gulp.src(paths.source.path)
+        var stream = gulp.src(options.source.path)
             .pipe(clipEmptyFiles())
             .pipe(!util.env.production || options.sourcemaps === true ? sourcemaps.init() : util.noop())
             .pipe(sass()) // TODO - .on('error'...
@@ -29,9 +39,8 @@ var scssTask = function(options) {
             .pipe(!util.env.production || options.sourcemaps === true ? sourcemaps.write() : util.noop())
             .pipe(util.env.production || options.combineMediaQueries === true ? combineMq() : util.noop())
             .pipe(util.env.production || options.minify === true ? cssNano() : util.noop())
-            .pipe(concat(paths.output.name))
-            .pipe(gulp.dest(paths.output.baseDir))
-            .pipe(options.browserSync === true ? browserSync.reload({ stream: true }) : util.noop())
+            .pipe(concat(options.output.name))
+            .pipe(gulp.dest(options.output.baseDir))
             .pipe(gulpFn(done));
 
         function done() {
@@ -41,19 +50,14 @@ var scssTask = function(options) {
         }
 
         return stream;
+
     })
-    .watch(paths.source.baseDir + '/**/*.+(sass|scss)')
-    .ignore(paths.output.path);
+    .watch(options.source.baseDir + '/**/*.+(sass|scss)')
+    .ignore(options.output.path);
 };
 
 GulpKit.extend('scss', function(options) {
     scssTask.apply(this, [options]);
 });
-
-var gulpPaths = function(source, output) {
-    return new GulpKit.Paths()
-        .source(source, 'scss') // TODO - Make this configurable
-        .output(output || 'css', 'style.css');
-};
 
 module.exports = scssTask;

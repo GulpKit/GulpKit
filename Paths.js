@@ -35,17 +35,18 @@ Paths.prototype.source = function(source, prefix) {
     return this;
 };
 
-Paths.prototype.output = function(output, defaultName) {
+Paths.prototype.output = function(output, defaultExtension) {
     this.output = this.parse(output);
 
     // If the user didn't provide a file name, use the tasks default name
-    if(!this.output.name && defaultName) {
+    if(!this.output.name && this.source.name) {
+
         // If the path is not an array, we can use that and change the extension
         if(!Array.isArray(this.source.path) && this.source.name.indexOf('*') == -1) {
-            defaultName = util.replaceExtension(this.source.name, this.parse(defaultName).extension);
+            defaultExtension = util.replaceExtension(this.source.name, '.' + defaultExtension);
         }
 
-        this.output = this.parse(p.join(output, defaultName));
+        this.output = this.parse(p.join(output, defaultExtension));
     }
 
     return this;

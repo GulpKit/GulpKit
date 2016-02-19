@@ -1,8 +1,9 @@
 var _ = require('underscore');
 var kit;
 
-var Task = function(name, stream) {
+var Task = function(name, options, stream) {
 	this.name = name;
+    this.options = options;
 	this.stream = stream;
 	this.watchers = [];
 

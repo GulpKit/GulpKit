@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/GulpKit/GulpKit#readme",
   "dependencies": {
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-batch": "^1.0.5",

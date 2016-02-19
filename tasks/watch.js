@@ -1,5 +1,5 @@
-var gulp = require('gulp');
 var GulpKit = require('../index');
+var gulp = require('gulp');
 var batch = require('gulp-batch');
 var _ = require('underscore');
 

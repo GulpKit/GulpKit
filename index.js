@@ -23,6 +23,7 @@ GulpKit.tasks = [];
 GulpKit.methods = {};
 GulpKit.Task = require('./Task')(GulpKit);
 GulpKit.Paths = require('./Paths');
+GulpKit.Options = require('./Options');
 GulpKit.gulp = require('gulp');
 GulpKit.util = require('gulp-util');
 

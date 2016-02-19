@@ -37,11 +37,15 @@ Compile sass files, autoprefix vendor prefixes, combines media queries and conca
 
 If the options in config aren't enough or you need extra functionality, you can extend GulpKit and make a custom task.
 
-    GulpKit.extend('customScss', function(options) {
-        // return a gulp stream
+    GulpKit.extend('custom', function(options) {
+
+        return new GulpKit.Task('custom', options, function() {
+            // return a gulp stream
+        })
+        .watch('path/to/watch')
+        .ignore('path/to/ignore');
+
     })
-    .watch('path/to/watch')
-    .ignore('path/to/ignore');
     
 ## Credit
 

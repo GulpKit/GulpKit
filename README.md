@@ -22,8 +22,6 @@ GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp p
     
 ### Tasks
 
-Currently only a prototype sass compiler task exists.
-
 #### scss
 
 Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS.
@@ -31,6 +29,16 @@ Compile sass files, autoprefix vendor prefixes, combines media queries and conca
     kit.scss({
         source: './scss/**/*',
         output: './css'
+    });
+
+#### browserSync
+
+Browsersync makes developing and testing faster by synchronising code changes and interactions like clicks, scrolls and form inputs across multiple devices.
+
+All output from tasks are added to the list of files that Browsersync will watch and refresh connected browsers on changes.
+
+    kit.browserSync({
+        proxy: 'yourapp.local'
     });
     
 ## Extending GulpKit
@@ -45,9 +53,9 @@ If the options in config aren't enough or you need extra functionality, you can 
         .watch('path/to/watch')
         .ignore('path/to/ignore');
 
-    })
+    });
     
 ## Credit
 
 * Some tasks built by [Jake Cobley](http://cobe.ly) from [JakeCobley/Kettle](https://github.com/JakeCobley/Kettle)
-* * scss
+* - scss

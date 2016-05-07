@@ -1,4 +1,4 @@
-![GulpKit Logo](http://i.imgur.com/ruOxMof.png)
+![GulpKit Logo](http://i.imgur.com/3f5iz63.png)
 
 Abstraction for front-end automation.
 

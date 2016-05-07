@@ -1,1 +1,215 @@
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M0,15.003v15c0,1.104,0.896,2,2,2h28c1.104,0,2-0.896,2-2v-15H0z" fill="#EF4D4D"/><path d="M30,31.003H2c-1.104,0-2-0.896-2-2v1c0,1.104,0.896,2,2,2h28c1.104,0,2-0.896,2-2v-1   C32,30.107,31.104,31.003,30,31.003z" opacity="0.15"/><path d="M31,15.003v-11c0-1.104-0.896-2-2-2H3c-1.104,0-2,0.896-2,2v11H31z" fill="#EF4D4D"/><rect height="11" opacity="0.2" width="26" x="3" y="4.003"/><rect fill="#FFFFFF" height="5" opacity="0.1" width="32" y="15.003"/><path d="M26,18.003c-0.553,0-1-0.447-1-1v1c0,0.553,0.447,1,1,1s1-0.447,1-1v-1C27,17.556,26.553,18.003,26,18.003z" opacity="0.2"/><path d="M6,18.003c-0.553,0-1-0.447-1-1v1c0,0.553,0.447,1,1,1s1-0.447,1-1v-1C7,17.556,6.553,18.003,6,18.003z" opacity="0.2"/><g><path d="M5,17.003c0,0.553,0.447,1,1,1s1-0.447,1-1v-3H5V17.003z" fill="#EACF60"/><path d="M25,17.003c0,0.553,0.447,1,1,1s1-0.447,1-1v-3h-2V17.003z" fill="#EACF60"/><path d="M6,0.003c-0.553,0-1,0.447-1,1v1h2v-1C7,0.45,6.553,0.003,6,0.003z" fill="#EACF60"/><path d="M26,0.003c-0.553,0-1,0.447-1,1v1h2v-1C27,0.45,26.553,0.003,26,0.003z" fill="#EACF60"/></g><path d="M12,12.003c-0.353,0-0.686-0.072-1-0.184v3.184h2v-3.184C12.686,11.931,12.353,12.003,12,12.003z" fill="#434854"/><rect fill="#434854" height="2" width="2" x="20" y="13.003"/><rect fill="#E6E6E6" height="7" width="2" x="20" y="6.003"/><g><rect height="1" opacity="0.2" width="18" x="7" y="14.003"/><rect height="1" opacity="0.2" width="2" x="27" y="14.003"/><rect height="1" opacity="0.2" width="2" x="3" y="14.003"/></g><path d="M13,6.003v3c0,0.553-0.447,1-1,1s-1-0.447-1-1v-3c-1.531,0.484-2,1.695-2,3c0,1.657,1.343,3,3,3   s3-1.343,3-3C15,7.698,14.516,6.456,13,6.003z" fill="#E6E6E6"/></g><g/><g/><g/><g/><g/><g/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512.24px" height="522.048px" viewBox="0 0 512.24 522.048" enable-background="new 0 0 512.24 522.048"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="#3D3D4C" d="M32,517.048c-14.888,0-27-12.112-27-27v-235h502v235c0,14.888-12.112,27-27,27H32z"/>
+		<path fill="#292933" d="M502,260.048v230c0,12.131-9.869,22-22,22H32c-12.131,0-22-9.869-22-22v-230H502 M512,250.048H0v240
+			c0,17.664,14.336,32,32,32h448c17.664,0,32-14.336,32-32V250.048L512,250.048z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_4_)">
+		<path fill="#E0363F" d="M21,255.048v-181c0-14.888,12.112-27,27-27h416c14.888,0,27,12.112,27,27v181H21z"/>
+		<path fill="#292933" d="M464,52.048c12.131,0,22,9.869,22,22v176H26v-176c0-12.131,9.869-22,22-22H464 M464,42.048H48
+			c-17.664,0-32,14.336-32,32v186h480v-186C496,56.384,481.664,42.048,464,42.048L464,42.048z"/>
+	</g>
+</g>
+<rect x="48.08" y="74.048" fill="#A9323B" width="416.08" height="176"/>
+<rect x="10" y="260.048" fill="#373744" width="491.999" height="80"/>
+<rect x="48.08" y="234.048" fill="#8C2930" width="416" height="16"/>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="400" y="282.048" width="32" height="32"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_6_)">
+		<defs>
+			<rect id="SVGID_7_" x="399.84" y="281.92" width="32.16" height="32.16"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		<g transform="matrix(1 0 0 1 3.051758e-05 3.051758e-05)" clip-path="url(#SVGID_8_)">
+			
+				<image overflow="visible" width="134" height="134" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAACOCAYAAADuFpByAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABENJREFUeNrsndtq20AURcd2ScBg
+KLg0NP//bclToeDQ4EJLPbFkVFf2jC4zOpe1YF5MjI282PuMIqQQAAAAAAAAPPHQLIC7PDcLAFEA
+UQBRYElWPaJEXjg00NngIApktQyiAKIAokBtUTZXL+6a4eXnaf3mGEHjRK8oX0/rz2kdOEbQirLm
+OEBia/yAKJDiy2nt74nCf5HhH26Jsm9sAmonUD2QVTspUagfCDmiUD/UTpYoQO1ki0L9QJYo1A9Q
+PZDfIuuxbwQ/80muKNSP8zQZUj2kiuM0GSIKqeI4TYYOs6SK0zQZKgqp4jRNxmyPSRWHaTJGFFLF
+YZqMEYVUsSfJcypNIn0XV+8S79me1qfAlfoWeArni+lTvI09hU8FOamcKdVDBTkZYOcShVRxkiZT
+RSFVjA+wU4dZBltnksRhdqooyGJzl1NEFGTRkyafm99qMVGQxWblFBGllYU7IdiS5EOUdaEvxk7I
+jiSz7HqoIAeSlKgeZNG/w6kqCrIsmyTb5nfcziVK383+vs38xb+H880Df/EbqqqbLq8lE4VksSFJ
+8erpk6UVBWH0SFJVlFaWPemiTpLqolBFZYbWp8KSVBtmGXJ1pkj1YZa5RbckiycK6TJckMdGkH3l
+z36VIkorS1xHhBEjiEhREEZGzYibUXK20V7nl5o7GlUzCgkjp2bUVI/HgVeqICpF6aZLMJIw0gVR
+K4p2aVoxWqQLYkIULdJ05dAihllRbkmzlDgW5DAvSkqcMJNE1zUSFFYKoswgUQprMiAKIApUEmXT
+07vx1PGGYwMd/juFT6pAVvUgCiAKIAogCixMPCH5giiQTJMoCs8UhCwQBRAF5qPvDCxnZ6HL22kd
++mR4D+cr4HccI2hFoXogtTWO1+yE1Y0/YIsMl61xuDOHMKfApXbuicKcArF2fjQu3Kwe6gcutRMS
+1UL9UDuHHFGoH2rnvX1hlXgD9UPtJBOF+qF2skWhfhDlA87MQt98crx+cZXxxn0zq/AMHqfzSU71
+UD/OdztDEoVUcZ4muYlCqjhPkyGJQqo4TpMhiUKqOE6ToYlCqjhNk6GJQqo4TZMxiUKq2JMkJkny
+rlOrkR+ALE4qZ2z1UEHOKmdqopAqjtJkSqKQKo7SZGqikCrGB9g5RUEWB5LMJQqyGJ1L5ppRrueV
++JQuLps0NJeUSBSSxWjllBIlBK7cNydJKVFIFWOSlBIFWYxJUlIUZFG8w6ktCrIslyTHMO1ZRNVF
+QRbFdVNbFGRRLklNUVpZ4npEGF2S1BaFdFEqyVKiIIvgoVWaKMiiIEWkiMLcokQSCaKQLkKrRqoo
+pItQQSSKgjBCakaLKAgjJEW0iOJRGHGCaBLFw8ArVhCNonTTJRhJGPGCaBVFuzTXd1wUL4gFUbRI
+05VDjRhWRbklzVLimJDDuigpccJMEvXeuNeSHN5EGStRCnMyAAAAAGjjrwADAHxsMGc4oRlfAAAA
+AElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 399.8398 281.9199)">
+			</image>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_9_" x="80" y="282.048" width="32" height="32"/>
+	</defs>
+	<clipPath id="SVGID_10_">
+		<use xlink:href="#SVGID_9_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_10_)">
+		<defs>
+			<rect id="SVGID_11_" x="79.92" y="281.92" width="32.16" height="32.16"/>
+		</defs>
+		<clipPath id="SVGID_12_">
+			<use xlink:href="#SVGID_11_"  overflow="visible"/>
+		</clipPath>
+		<g transform="matrix(1 0 0 1 7.629395e-06 3.051758e-05)" clip-path="url(#SVGID_12_)">
+			
+				<image overflow="visible" width="134" height="134" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAYAAADn/TAIAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9lJREFUeNrs3c1qFFEQBtA2UTCR
+rNxG3Pn+bySiWzcBDSKC0zqBISQzk+rbP1X3fNBklYR0Tr6q2xmYYRAREREREZF2udxd126DvDQ3
+u+uT2yCncuEWCDgCjoAjBQ9L4MixjGhuwRGjSsCRInA8PZYQnGcXIhGjSs45il+BI5Gj+IeXwrHn
+SGhU2XOMqSs7jjQdU6fgGFcSgmNciVEl7fabc+AYV/abEBzjSowqaTOmzoVjXBlTITjGlbYJjyqt
+o21CcLSOtgkvx1pH24TgaB1tEz6Oax1tE4KjdbRNCI7W0TZhOOM3+whPv20ThWNkdd42U+AYWR23
+zVQ4WicvmvdT2mYqHK3T4YhqBcei3NmIagUHns5GVEs48HSGpiUceDpC0xqOk1bhZXhuOE5aRZfh
+JeAYWYVH1Jxw4CmOZk448BRGMzcceIqiWQIOPAXRLAXnEM8NQLOAuVkSzZjXCz9PGN8L6+fu+rL/
+KIlaZo3GMboKoVkLDjzJ0awJx96TGM3SO469ZzqY8X5drY1mC3Aet8+33fUHoO2C2Rqcx+0D0EbB
+bBEOQBvbY7LB6RnQplsmC5yeFug0YDLBeWqBHgo00OEL3tKAyQjnsH2GgxGWCVFqLJnhZERUBksV
+OOcgWgtSSSwV4TyH6ClIQyNUx16UXxJLdTinIA1nojqV8jh6hxNFJUfivRykCRz/YJQQnCkzX4wq
+EXAEHAFHMmQ8LN2DIy/NeFj6Co4YVQKOFIHj6bGE4Hh6LEaVtD+KgyOho/gxOPYcCY0qe44xdW/H
+kaZj6hQc40pCcIwrMaqk3X5zDhzjyn4TgmNciVElbcbUuXCMK2MqBMe40jbhUaV1tE0IjtbRNuHl
+WOtomxAcraNtwsdxraNtQnC0jrYJwdE62uZfLgOf83v/Dd/trjfufeq2udtfi8B5wPNr+P9+A5Iz
+P3bX5+gnX0wUa2R1tttMbRytkxvN9+hu06JxtE5nC3GrxrEod7YQt4QDT2cjqiUceDpD0xIOPB2h
+aQ3HSWubmfS8Zq5TlZPW9tvmfo4vfDnD1zSyCo+oOeHAUxzNnHDgKYxmbjjwFEWzBBx4CqJZCs4h
+nrf7HxCgtmDGI/fdUmjGvFrhB3144/lrv/NcLbNG4xhdhdCsBQee5GjWhGPvSYxmrR3H3hMHM/6h
+3a+NZktwHvDc7lsQoI2C2SIcgBKA2TIcgDayx2SF0yOgTbdMNjg9LNBpwGSEc9g+Q4EGOnzBWxow
+WeFkR5QaSxU4WRCVwVIRznOI1oJUEkt1OKcgDY1QHXtRfkksvcGJojqV8jhEREREestfAQYA0l8Q
+Kx8FpRsAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.24 79.9199 281.9199)">
+			</image>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_13_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_14_">
+		<use xlink:href="#SVGID_13_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_14_)" fill="#373744" d="M80,298.048c0,8.849,7.152,16,16,16s16-7.151,16-16v-48H80V298.048z"/>
+	<g clip-path="url(#SVGID_14_)">
+		<path fill="#E6E6E6" d="M96,311.048c-11.028,0-20-8.972-20-20v-52h40v52C116,302.076,107.028,311.048,96,311.048z"/>
+		<path fill="#292933" d="M112,243.048v48c0,8.849-7.152,16-16,16s-16-7.151-16-16v-48H112 M120,235.048h-8H80h-8v8v48
+			c0,13.233,10.767,24,24,24s24-10.767,24-24v-48V235.048L120,235.048z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_15_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_16_">
+		<use xlink:href="#SVGID_15_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_16_)" fill="#373744" d="M400,298.048c0,8.849,7.152,16,16,16s16-7.151,16-16v-48h-32V298.048z"/>
+	<g clip-path="url(#SVGID_16_)">
+		<path fill="#E6E6E6" d="M416,313.048c-11.579,0-21-9.421-21-21v-53h42v53C437,303.627,427.579,313.048,416,313.048z"/>
+		<path fill="#292933" d="M432,244.048v48c0,8.849-7.152,16-16,16s-16-7.151-16-16v-48H432 M442,234.048h-10h-32h-10v10v48
+			c0,14.337,11.664,26,26,26s26-11.663,26-26v-48V234.048L442,234.048z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_17_" width="512" height="522"/>
+	</defs>
+	<clipPath id="SVGID_18_">
+		<use xlink:href="#SVGID_17_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_18_)">
+		<path fill="#BDBDC0" d="M75,47.048v-21c0-11.579,9.421-21,21-21s21,9.421,21,21v21H75z"/>
+		<path fill="#292933" d="M96,10.048c8.848,0,16,7.152,16,16v16H80v-16C80,17.2,87.152,10.048,96,10.048 M96,0.048
+			c-14.336,0-26,11.663-26,26v16v10h10h32h10v-10v-16C122,11.711,110.336,0.048,96,0.048L96,0.048z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_19_" width="512" height="522"/>
+	</defs>
+	<clipPath id="SVGID_20_">
+		<use xlink:href="#SVGID_19_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_20_)">
+		<path fill="#BDBDC0" d="M395,47.048v-21c0-11.579,9.421-21,21-21s21,9.421,21,21v21H395z"/>
+		<path fill="#292933" d="M416,10.048c8.848,0,16,7.152,16,16v16h-32v-16C400,17.2,407.152,10.048,416,10.048 M416,0.048
+			c-14.336,0-26,11.663-26,26v16v10h10h32h10v-10v-16C442,11.711,430.336,0.048,416,0.048L416,0.048z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_21_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_22_">
+		<use xlink:href="#SVGID_21_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_22_)" fill="#434854" d="M192,202.048c-5.648,0-10.977-1.151-16-2.944v50.944h32v-50.944
+		C202.977,200.896,197.648,202.048,192,202.048z"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_23_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_24_">
+		<use xlink:href="#SVGID_23_"  overflow="visible"/>
+	</clipPath>
+	<rect x="320" y="218.048" clip-path="url(#SVGID_24_)" fill="#434854" width="32" height="32"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_25_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_26_">
+		<use xlink:href="#SVGID_25_"  overflow="visible"/>
+	</clipPath>
+	<rect x="320" y="106.048" clip-path="url(#SVGID_26_)" fill="#E6E6E6" width="32" height="112"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_27_" y="10" width="512" height="512"/>
+	</defs>
+	<clipPath id="SVGID_28_">
+		<use xlink:href="#SVGID_27_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_28_)" fill="#E6E6E6" d="M208,106.048v48c0,8.849-7.152,16-16,16s-16-7.151-16-16v-48
+		c-24.496,7.744-32,27.12-32,48c0,26.513,21.488,48,48,48s48-21.487,48-48C240,133.168,232.256,113.296,208,106.048z"/>
+</g>
+<path fill="#373744" d="M501.999,455.123V469c0,13.255-9.989,23.268-23.244,23.268H33.254c-12.597,0-22.245-8.896-23.174-21.154
+	v18.053c0,13.255,9.999,23.102,23.254,23.102h445.501c13.255,0,23.244-10.013,23.244-23.268v-32
+	C502.079,456.367,502.047,455.743,501.999,455.123z"/>
+<rect x="80" y="243.048" fill="#BDBDC0" width="32" height="7"/>
+<rect x="400" y="244.048" fill="#BDBDC0" width="32" height="7"/>
+</svg>

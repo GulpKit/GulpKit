@@ -12,7 +12,9 @@ describe('SCSS Task', function() {
     var fileShouldExist = function(file) {
         return new Promise(function(resolve) {
             fs.access(file, fs.R_OK, function(err) {
-                resolve(assert.equal(err, null));
+                resolve(function () {
+                    assert.equal(err, null)
+                });
             });
         });
     };
@@ -49,7 +51,7 @@ describe('SCSS Task', function() {
             });
         });
 
-        runGulp(function() {
+        runGulp(function() {      
             fileShouldExist('./tests/build/css/app.css')
                 .then(function() {
                     done();

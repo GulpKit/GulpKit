@@ -11,7 +11,7 @@ describe('JS Task', function() {
 
     var fileShouldExist = function(file) {
         return new Promise(function(resolve) {
-            fs.access(file, fs.R_OK, function(err) {
+            fs.access(file, function(err) {
                 resolve(assert.equal(err, null));
             });
         });

@@ -73,7 +73,7 @@ describe('SCSS Task', function() {
         runGulp(function() {
             fileShouldExist('./tests/build/css/style.css')
                 .then(function() {
-                    fileShouldExist('./tests/build/css/admin.css');
+                    return fileShouldExist('./tests/build/css/admin.css');
                 })
                 .then(function() {
                     done();

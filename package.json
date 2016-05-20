@@ -1,6 +1,6 @@
 {
   "name": "gulpkit",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Abstraction for front-end dev automation",
   "main": "index.js",
   "scripts": {

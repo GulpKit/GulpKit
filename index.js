@@ -8,13 +8,15 @@ var GulpKit = function(methods) {
     methods(GulpKit.methods);
 
     for(var name in GulpKit.methods) {
-        if(_.contains(gulp.methods, name)) return;
+        if(!_.where(GulpKit.tasks, { name: name }).length) continue;
 
+        if(util.env._.length && util.env._[0] != name) continue;
+
+        var tasks = _.where(GulpKit.tasks, { name: name });
         gulp.task(name, function() {
-            return _.where(GulpKit.tasks, { name: name })
-                .forEach(function(task) {
-                    task.run();
-                });
+            tasks.forEach(function(task) {
+                task.run();
+            });
         });
     }
 };

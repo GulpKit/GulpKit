@@ -41,6 +41,7 @@ var scssTask = function(options) {
             .pipe(util.env.production || options.minify === true ? cssNano() : util.noop())
             .pipe(concat(options.output.name))
             .pipe(gulp.dest(options.output.baseDir))
+            .pipe(!util.env.production && options.browserSync ? browserSync.reload(options.browserSync) : util.noop())
             .pipe(gulpFn(done));
 
         function done() {

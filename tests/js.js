@@ -5,8 +5,8 @@ var fs = require('fs');
 var del = require('del');
 var bluebird = require('bluebird');
 
-describe('SCSS Task', function() {
-    this.slow(3000);
+describe('JS Task', function() {
+    this.slow(5000);
     this.timeout(0);
 
     var fileShouldExist = function(file) {
@@ -38,40 +38,33 @@ describe('SCSS Task', function() {
     beforeEach(reset);
     after(reset);
 
-    it('should compile a sass file to css', function(done) {
+    it('should compile a js file to minified build', function(done) {
         GulpKit(function(kit) {
-            kit.scss({
-                source: './tests/resources/scss/app.scss',
-                output: './tests/build/css/app.css'
+            kit.js({
+                source: './tests/resources/js/main.js',
+                output: './tests/build/js/script.js'
             });
         });
 
         runGulp(function() {
-            fileShouldExist('./tests/build/css/app.css')
+            fileShouldExist('./tests/build/js/script.js')
                 .then(function() {
                     done();
                 });
         });
     });
 
-    it('should compile multiple sass files to two different locations', function(done) {
+    it('should combine multiple js files into one minifed build', function(done) {
         GulpKit(function(kit) {
-            kit.scss({
-                source: './tests/resources/scss/app.scss',
-                output: './tests/build/css/style.css'
-            });
-
-            kit.scss({
-                source: './tests/resources/scss/admin.scss',
-                output: './tests/build/css/admin.css'
+            kit.jsDir({
+                source: './tests/resources/js/vendor',
+                output: './tests/build/js/vendor.js',
+                jshint: false
             });
         });
 
         runGulp(function() {
-            fileShouldExist('./tests/build/css/style.css')
-                .then(function() {
-                    fileShouldExist('./tests/build/css/admin.css');
-                })
+            fileShouldExist('./tests/build/js/vendor.js')
                 .then(function() {
                     done();
                 });

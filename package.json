@@ -1,6 +1,6 @@
 {
   "name": "gulpkit",
-  "version": "0.0.4",
+  "version": "0.1",
   "description": "Abstraction for front-end dev automation",
   "main": "index.js",
   "scripts": {
@@ -30,9 +30,12 @@
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.1",
     "gulp-fn": "0.0.0",
+    "gulp-jshint": "^2.0.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
     "parse-filepath": "^0.6.3",
     "path": "^0.12.7",
     "require-dir": "^0.3.0",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "assert": "^1.3.0",
+    "bluebird": "^3.4.0",
     "del": "^2.2.0",
     "fs": "0.0.2",
     "mocha": "^2.4.5"

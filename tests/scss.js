@@ -29,14 +29,17 @@ describe('SCSS Task', function() {
         }
     };
 
-    var reset = function(done) {
+    beforeEach(function(done) {
+        del('./tests/build/css').then(function() {
+            done();
+        });
+    });
+
+    after(function(done) {
         del('./tests/build').then(function() {
             done();
         });
-    };
-
-    beforeEach(reset);
-    after(reset);
+    });
 
     it('should compile a sass file to css', function(done) {
         GulpKit(function(kit) {

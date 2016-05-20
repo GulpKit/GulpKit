@@ -29,14 +29,17 @@ describe('JS Task', function() {
         }
     };
 
-    var reset = function(done) {
+    beforeEach(function(done) {
+        del('./tests/build/js').then(function() {
+            done();
+        });
+    });
+
+    after(function(done) {
         del('./tests/build').then(function() {
             done();
         });
-    };
-
-    beforeEach(reset);
-    after(reset);
+    });
 
     it('should compile a js file to minified build', function(done) {
         GulpKit(function(kit) {

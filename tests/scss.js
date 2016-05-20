@@ -31,6 +31,7 @@ describe('SCSS Task', function() {
     };
 
     beforeEach(function(done) {
+        GulpKit.tasks = [];
         del('./tests/build/css').then(function() {
             done();
         });

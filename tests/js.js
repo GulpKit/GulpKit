@@ -30,6 +30,7 @@ describe('JS Task', function() {
     };
 
     beforeEach(function(done) {
+        GulpKit.tasks = [];
         del('./tests/build/js').then(function() {
             done();
         });

@@ -50,7 +50,7 @@ describe('SCSS Task', function() {
             });
         });
 
-        runGulp(function() {      
+        runGulp(function() {
             fileShouldExist('./tests/build/css/app.css')
                 .then(function() {
                     done();

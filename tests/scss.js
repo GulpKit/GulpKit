@@ -12,7 +12,8 @@ describe('SCSS Task', function() {
     var fileShouldExist = function(file) {
         return new Promise(function(resolve) {
             fs.access(file, fs.R_OK, function(err) {
-                resolve(assert.equal(err, null));
+                assert.equal(err, null);
+                resolve();
             });
         });
     };
@@ -30,6 +31,7 @@ describe('SCSS Task', function() {
     };
 
     beforeEach(function(done) {
+        GulpKit.tasks = [];
         del('./tests/build/css').then(function() {
             done();
         });

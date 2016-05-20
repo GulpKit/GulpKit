@@ -12,7 +12,9 @@ describe('SCSS Task', function() {
     var fileShouldExist = function(file) {
         return new Promise(function(resolve) {
             fs.access(file, fs.R_OK, function(err) {
-                resolve(assert.equal(err, null));
+                resolve(function () {
+                    assert.equal(err, null)
+                });
             });
         });
     };
@@ -50,6 +52,13 @@ describe('SCSS Task', function() {
         });
 
         runGulp(function() {
+            // new Promise(function(resolve) {
+            //     fs.access('./tests/build/css/app.css', fs.R_OK, function(err) {
+            //         resolve(assert.equal(err, null));
+            //     });
+            // }).then(done());
+        
+
             fileShouldExist('./tests/build/css/app.css')
                 .then(function() {
                     done();
@@ -71,6 +80,20 @@ describe('SCSS Task', function() {
         });
 
         runGulp(function() {
+            // new Promise(function(resolve) {
+            //     fs.access('./tests/build/css/style.css', fs.R_OK, function(err) {
+            //         resolve(assert.equal(err, null));
+            //     });
+            // }).then(function () {
+            //     new Promise(function(resolve) {
+            //         fs.access('./tests/build/css/admin.css', fs.R_OK, function(err) {
+            //             resolve(assert.equal(err, null));
+            //         });
+            //     }).then(done());
+            // });
+
+
+
             fileShouldExist('./tests/build/css/style.css')
                 .then(function() {
                     return fileShouldExist('./tests/build/css/admin.css');

@@ -15,11 +15,13 @@ GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp p
 
 ## Creating a gulpfile
 
-    var GulpKit = require('GulpKit');
+```js
+var GulpKit = require('GulpKit');
 
-    GulpKit(function(kit) {
-        // tasks
-    });
+GulpKit(function(kit) {
+    // tasks
+});
+```
 
 ### Tasks
 
@@ -27,19 +29,23 @@ GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp p
 
 Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS with sourcemaps.
 
-    kit.scss({
-        source: './scss/app.scss',
-        output: './css/style.css'
-    });
+```js
+kit.scss({
+    source: './scss/app.scss',
+    output: './css/style.css'
+});
+```
 
 #### js
 
 Combine Javascript files, run JSHint and uglify with sourcemaps.
 
-    kit.js({
-        source: './js/main.js',
-        output: './build/script.js'
-    });
+```js
+kit.js({
+    source: './js/main.js',
+    output: './build/script.js'
+});
+```
 
 #### browserSync
 
@@ -47,23 +53,27 @@ Browsersync makes developing and testing faster by synchronising code changes an
 
 All output from tasks are added to the list of files that Browsersync will watch and refresh connected browsers on changes.
 
-    kit.browserSync({
-        proxy: 'yourapp.local'
-    });
+```js
+kit.browserSync({
+    proxy: 'yourapp.local'
+});
+```
 
 ## Extending GulpKit
 
 If the options in config aren't enough or you need extra functionality, you can extend GulpKit and make a custom task.
 
-    GulpKit.extend('custom', function(options) {
+```js
+GulpKit.extend('custom', function(options) {
 
-        return new GulpKit.Task('custom', options, function() {
-            // return a gulp stream
-        })
-        .watch('path/to/watch')
-        .ignore('path/to/ignore');
+    return new GulpKit.Task('custom', options, function() {
+        // return a gulp stream
+    })
+    .watch('path/to/watch')
+    .ignore('path/to/ignore');
 
-    });
+});
+```
 
 ## Credit
 

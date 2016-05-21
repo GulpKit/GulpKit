@@ -74,10 +74,16 @@ GulpKit(function(kit) {
             <div class="container">
                 <h1>Tasks</h1>
                 <h2>scss</h2>
-                <p>Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS.</p>
+                <p>Compile sass files, autoprefix vendor prefixes, combines media queries and concat/minify CSS with sourcemaps.</p>
                 <pre><code>kit.scss({
-    source: './scss/**/*',
-    output: './css'
+    source: './scss/app.scss',
+    output: './css/style.css'
+});</code></pre>
+                <h2>js</h2>
+                <p>Combine Javascript files, run JSHint and uglify with sourcemaps.</p>
+                <pre><code>kit.js({
+    source: './js/main.js',
+    output: './build/script.js'
 });</code></pre>
                 <h2>browserSync</h2>
                 <p>Browsersync makes developing and testing faster by synchronising code changes and interactions like clicks, scrolls and form inputs across multiple devices.</p>
@@ -91,7 +97,7 @@ GulpKit(function(kit) {
             <div class="container">
                 <h1>Coming Soon / To-Do</h1>
                 <ul>
-                    <li>JS task</li>
+                    <li>Browserify support</li>
                 </ul>
             </div>
         </section>

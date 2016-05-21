@@ -5,9 +5,4 @@ GulpKit(function(kit) {
         source: './scss/app.scss',
         output: './css/style.css'
     });
-
-    // kit.js({
-    //     source: './resources/js/app.js',
-    //     output: './js/script.js'
-    // });
 });

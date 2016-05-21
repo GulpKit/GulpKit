@@ -44,7 +44,7 @@
                 <h1>Docs</h1>
                 <p>Advanced usage of GulpKit is easy with the use of <code>GulpKit.extend</code>.</p>
                 <pre><code>GulpKit.extend('customSass', function(options) {
-    return new Task('customSass', options, function() {
+    return new GulpKit.Task('customSass', options, function() {
         return gulp.src(options.source.path)
             .pipe(sass())
             .pipe(gulp.dest(options.output.baseDir));
@@ -67,7 +67,7 @@ GulpKit(function(kit) {
     // Overwrite options into default settings, specify the extension like 'css'
     options = GulpKit.Options.extend(defaults, options, extension);
 
-    return new Task('customOptions', options, function() {
+    return new GulpKit.Task('customOptions', options, function() {
         return gulp.src(options.source.path)
             .pipe(options.foo ? ... : util.noop())
             .pipe(gulp.dest(options.output.path));
@@ -83,7 +83,7 @@ GulpKit(function(kit) {
 });</code></pre>
                 <h2>Testing</h2>
                 <p>We use <a href="http://mochajs.org">Mocha</a> for JS testing. Testing the gulp tasks requires that the gulp stream returns a callback so that we know when it's done (<a href="https://github.com/gulpjs/gulp/issues/355">support for this should be coming in Gulp 4</a>).</p>
-                <pre><code>new Task('customTested', options, function(callback) {
+                <pre><code>new GulpKit.Task('customTested', options, function(callback) {
     return gulp.src(...)
         .pipe(...)
         .pipe(gulpFn(done));

@@ -9,6 +9,6 @@
   "author": "Dan Bovey <dan@danbovey.uk>",
   "license": "MIT",
   "devDependencies": {
-    "gulpkit": "0.0.4"
+    "gulpkit": "^0.1.0"
   }
 }

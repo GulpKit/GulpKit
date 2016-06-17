@@ -3,3 +3,9 @@ node_js:
     - "5"
 notifications:
   email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/9cf860d971c0022e5d28
+    on_success: always
+    on_failure: always
+    on_start: never

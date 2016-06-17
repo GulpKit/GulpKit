@@ -8,10 +8,9 @@ GulpKit aims to match the simplicity of CodeKit with the power of NPM and Gulp p
 [![npm](https://img.shields.io/npm/dt/gulpkit.svg)](https://www.npmjs.com/package/gulpkit)
 [![npm](https://img.shields.io/npm/v/gulpkit.svg)](https://www.npmjs.com/package/gulpkit)
 [![npm](https://img.shields.io/npm/l/gulpkit.svg)](https://raw.githubusercontent.com/GulpKit/GulpKit/master/LICENSE)
+[![Join the chat at https://gitter.im/GulpKit/GulpKit](https://badges.gitter.im/GulpKit/GulpKit.svg)](https://gitter.im/GulpKit/GulpKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Install
-
-[![Join the chat at https://gitter.im/GulpKit/GulpKit](https://badges.gitter.im/GulpKit/GulpKit.svg)](https://gitter.im/GulpKit/GulpKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
     npm i gulpkit
 
